@@ -62,10 +62,11 @@ class Game:
                 self.manager.alive = False
 
     def run(self):
+
         while self.manager.alive:
             self.check_input()
             self.surface.blit(self.background, (0, 0))
             self.snake.update()
             self.snake.draw()
-            pygame.display.flip()
-            self.clock.tick(60)
+            self.clock.tick(50)
+            pygame.display.update()

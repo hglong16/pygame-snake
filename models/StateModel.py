@@ -4,4 +4,4 @@ class Manager:
         self.velocity = velocity
         self.alive = True
         self.score = 0
-        self.factor = 0.22
+        self.factor = 1 / 5
